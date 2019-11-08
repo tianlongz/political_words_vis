@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Visualization - Homework 6 - The State of the State of the State </title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://d3js.org/d3-array.v2.min.js"></script>
+    <script src="https://d3js.org/d3-force.v2.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+<div id="header-wrap">
+    <div class="row">
+        <div class="col-sm-6">
+            <header>
+                <h1>The State of the State of the States</h1>
+                <div>Name: Tianlong Zhang; E-Mail: tianlong.zhang@utah.edu; UID: u1209611</div>
+            </header>
+        </div>
+        <div class="col-sm-6">
+            <p><strong>At the beginning of the year,</strong> each governor lays policy priorities in their version of the State of the Union address -- a "state of the state" address.
+            The team at 538 conducted a text analysis of all 50 governors' 2019 state of the state speeches to see what issues were talked about the most and whether there were differences between what Democratic and Republican governors were focusing on.</p>
+        </div>
+    </div>
+</div>
+
+<div id="body-wrap">
+    <div class="center-div">
+        <p>Grouped by Topic
+            <span>
+                <label class="switch">
+                  <input id="toggle" type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+                <button type="button" id="button-wrap" class="btn btn-outline-primary">Show Extremes</button>
+                <div id="button-wrap"></div>
+            </span>
+        </p>
+    </div>
+    <div class="row">
+        <svg width="900" height="900">
+            <g id="brushes"></g>
+            <g id="bubblehead"></g>
+            <g id="bubblechart"></g>
+            <g id="bubbleaxis"></g>
+        </svg>
+        <table id="matchTable">
+            <thead>
+            <tr>
+                <th style="text-align:center">Phrase</th>
+                <td style="text-align:center">Frequency<span class="glyphicon glyphicon-sort"></span><br/></td>
+                <td style="text-align:center">Percentage</td>
+                <td style="text-align:center">Total</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="freHeader"></td>
+                <td id="perHeader"></td>
+                <td></td>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+<div id = "tooltip"></div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+<script type="application/javascript" src="js/table.js"></script>
+<script type="application/javascript" src="js/bubblechart.js"></script>
+<script type="application/javascript" src="js/script.js"></script>
+</body>
+</html>
