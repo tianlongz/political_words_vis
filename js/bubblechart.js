@@ -127,12 +127,6 @@ class Bubble {
                         const [left, right] = selectRange;
                         bubbleData.forEach(d => {
                             if (
-                                d.sourceX - 10>= left &&
-                                d.sourceX -10 <= right &&
-                                !spanned) {
-                                selectedPoints.push(d);
-                            }
-                            else if (
                                 d.category === "energy/environment" &&
                                 d.moveX -10 >= left &&
                                 d.moveX -10 <= right &&
@@ -180,12 +174,6 @@ class Bubble {
                         const [left, right] = selectRange;
                         bubbleData.forEach(d => {
                             if (
-                                d.sourceX - 10>= left &&
-                                d.sourceX -10 <= right &&
-                                !spanned) {
-                                selectedPoints.push(d);
-                            }
-                            else if (
                                 d.category === "crime/justice" &&
                                 d.moveX -10 >= left &&
                                 d.moveX -10 <= right &&
@@ -233,12 +221,6 @@ class Bubble {
                         const [left, right] = selectRange;
                         bubbleData.forEach(d => {
                             if (
-                                d.sourceX - 10>= left &&
-                                d.sourceX -10 <= right &&
-                                !spanned) {
-                                selectedPoints.push(d);
-                            }
-                            else if (
                                 d.category === "education" &&
                                 d.moveX -10 >= left &&
                                 d.moveX -10 <= right &&
@@ -286,12 +268,6 @@ class Bubble {
                         const [left, right] = selectRange;
                         bubbleData.forEach(d => {
                             if (
-                                d.sourceX - 10>= left &&
-                                d.sourceX -10 <= right &&
-                                !spanned) {
-                                selectedPoints.push(d);
-                            }
-                            else if (
                                 d.category === "health care" &&
                                 d.moveX -10 >= left &&
                                 d.moveX -10 <= right &&
@@ -339,12 +315,6 @@ class Bubble {
                         const [left, right] = selectRange;
                         bubbleData.forEach(d => {
                             if (
-                                d.sourceX - 10>= left &&
-                                d.sourceX -10 <= right &&
-                                !spanned) {
-                                selectedPoints.push(d);
-                            }
-                            else if (
                                 d.category === "mental health/substance abuse" &&
                                 d.moveX -10 >= left &&
                                 d.moveX -10 <= right &&
